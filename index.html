@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Mapa del proyecto</title>
+  <link rel="icon" href="img/motico.png" type="image/png">
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- BANNER -->
+  <header id="banner" aria-label="Banner Flow City">
+    <img src="img/banner.jpg" alt="Banner Flow City">
+  </header>
+
+  <!-- CONTENIDO PRINCIPAL -->
+  <main id="layout">
+
+    <!-- SIDEBAR -->
+    <aside id="sidebar">
+      <div id="sidebar-content">
+        <section class="sidebar-box">
+          <h2>Información</h2>
+          <p>Flow City es una interfaz creada por estudiantes de la Universidad del Cauca para estudiantes.</p>
+        </section>
+
+        <section class="sidebar-box">
+          <h2>Convenciones</h2>
+          <p>Iconos de rutas y significado.</p>
+          <ul class="legend-list">
+            <li>
+              <img src="img/auto1.png" alt="Icono de ruta principal">
+              <span>Transpubenza Ruta 2</span>
+            </li>
+            <li>
+              <img src="img/auto2.png" alt="Icono de ruta secundaria">
+              <span>Sotracauca Ruta 1</span>
+            </li>
+            <li>
+              <img src="img/par.png" alt="Icono de parada de Bus">
+              <span>Parada de bus</span>
+            </li>
+            <li>
+              <img src="img/ico1.png" alt="Icono de Salud">
+              <span>Facultad de Salud</span>
+            </li>
+            <li>
+              <img src="img/ico2.png" alt="Icono de Contables">
+              <span>Facultad de Ciencias Contables</span>
+            </li>
+            <li>
+              <img src="img/ico3.png" alt="Icono de Civil">
+              <span>Facultad de ingeniería Civil</span>
+            </li>
+            <li>
+              <img src="img/ico4.png" alt="Icono de Eduación">
+              <span>Facultad de Educación</span>
+            </li>
+            <li>
+              <img src="img/ico5.png" alt="Icono de Humanidades">
+              <span>Facultad de Humanidades</span>
+            </li>
+            <li>
+              <img src="img/ico6.png" alt="Icono de Derecho">
+              <span>Facultad de Derecho</span>
+            </li>
+          </ul>
+        </section>
+      </div>
+    </aside>
+
+    <!-- MAPA -->
+    <div id="map">
+      <button id="sidebar-toggle" aria-expanded="true" aria-label="Alternar barra lateral">◀</button>
+      <div id="weather-card" class="weather-card" aria-live="polite">
+        <div class="weather-card__header">Clima en Popayán</div>
+        <div class="weather-card__body">
+          <div class="weather-card__temp" id="weather-temp">--°C</div>
+          <div class="weather-card__condition" id="weather-condition">Cargando...</div>
+          <div class="weather-card__info">
+            <span id="weather-wind">Viento -- km/h</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script type="module" src="script.js"></script>
+
+</body>
+</html>
